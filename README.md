@@ -40,3 +40,8 @@ r.arch64 = True  # This line opens the key in 64-bit view
 # Add a value
 r.set_value(r'SOFTWARE\this\is\a\custom\path', 'my_key', 'we automatically created the specified path')
 ```
+
+Write Access to the registry
+----------------------------
+The script will fail if it tries to write to the registry and the user it is run under doesn't have
+the appropriate permissions.
